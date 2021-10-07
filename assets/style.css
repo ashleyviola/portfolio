@@ -17,6 +17,17 @@ h1 {
     font-size: 48px;
     font-weight: 600;
     line-height: 1.2;
+    color: white;
+}
+h2{
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+}
+h3{
+    font-size: 24px;
+    font-weight: 600px;
+    color: white;
 }
 p{
     font-size: 18px;
@@ -76,9 +87,21 @@ header nav ul li a:hover{
     margin: 0 auto 0 auto;
 }
 .cta p{
-    padding: 20px 0 0 0;
+    padding: 35px 0 0 0;
 }
-.cta image{
-    
+.acquainted { 
+    float: left;
 }
+#downarrow {
+    width: 4.5%;
+    float: none;
+    margin: 33px;
+ }
 
+ /* profile styling */ 
+.profile {
+    background-color: #0f292f;
+    padding: 50px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
