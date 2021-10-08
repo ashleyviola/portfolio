@@ -17,17 +17,15 @@ h1 {
     font-size: 48px;
     font-weight: 600;
     line-height: 1.2;
-    color: white;
 }
 h2{
     font-size: 48px;
     font-weight: 600;
-    color: white;
 }
 h3{
     font-size: 24px;
     font-weight: 600px;
-    color: white;
+
 }
 p{
     font-size: 18px;
@@ -41,13 +39,16 @@ header{
     background-color: #0f292f;
     display: flex;
     justify-content: space-between;
+    align-content: center;
+    align-items: center;
     flex-wrap: wrap;
     top: 0;
     height: auto;
 }
 header h1{
-    font-size: 32px;
+    font-size: 24px;
     letter-spacing: 3px;
+    align-self: center;
 }
 header nav{
     margin: 10px 0 ;
@@ -61,15 +62,17 @@ header nav ul{
 header nav ul li a{
     padding: 10px 15px;
     font-weight: 300;
-    font-size: 23px;
+    font-size: 18px;
     color: white;
     text-decoration: none;
 }
 header nav ul li a:hover{
     color: #cb2d6f;
-    font-weight: 700;
+    border-bottom: 1px solid #cb2d6f;
 }
-
+.viola{
+    font-weight: lighter;
+}
 /* hero styling */ 
 .hero  {
     background-image: url(../assets/images/cta.jpeg);
@@ -99,9 +102,111 @@ header nav ul li a:hover{
  }
 
  /* profile styling */ 
-.profile {
+.profile, .contact{
     background-color: #0f292f;
     padding: 50px 50px;
+}
+.intro p, .portfolio p, .particular-skills p, .this-far p {
+    padding: 30px 0;
+}
+.about-me{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.about-me img{
+    flex: 0 0 200px;
+    align-self: flex-end;
+}
+.about-me article{
+    flex: 0 0 260px;
+    border-top: 2px solid white;
+    padding: 20px 0 0 0;
+}
+.about-me h3{
+    padding: 0 0 20px 0;
+}
+.interest:hover{
+    border-top: 2px solid #cb2d6f;
+    color: #cb2d6f;
+}
+/* project portfolio styling */
+.projects, .skills, .footer{
+    color: black;
+    padding: 50px 50px;
+}
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.project-list div{
+    padding: 0 0 45px 0;
+}
+.project-list h3{
+    max-width: 550px;
+    font-size: 18px;
+    color: #14a098;
+    font-weight: 800;
+    padding: 0 0 5px 0;
+}
+.project-list p{
+    max-width: 550px;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1.1;
+}
+/* skills styling */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.particular-skills{
+    max-width: 33%;
+    border-top: 2px solid #cb2d6f;
+    padding: 20px 0 0 0;
+}
+.skills-list{
+    display: flex;
+    flex-direction: column;    
+    max-width: 50%;
+    align-items: flex-end;
+}
+.skills-list h3{
+    border-top: 1px solid black;
+    padding: 40px 0 20px 0;
+}
+.skills-list p{
+    font-weight: normal;
+    padding: 0 0 40px 0;
+}
+/* contact styling */
+.contact-info h3{
+    max-width: 20%;
+    padding: 20px 0;
+    border-top: 1px solid white;
+}
+.contact-info p{
+    padding: 15px 0 0 0;
+}
+.contact p a:link, .contact p a:active, .contact p a:visited{
+    text-decoration: none;
+    color: white;
+}
+.contact p a:hover {
+    color: #cb2d6f
+}
+/* footer styling */
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.designed{
+    max-width: 70%;
+}
+.copyright{
+    max-width: 30%;
+    align-self: flex-end;
 }
