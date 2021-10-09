@@ -39,10 +39,14 @@ header{
     background-color: #0f292f;
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
+    background-image: url("../assets/images/cta.jpeg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
     height: auto;
 }
 header h1{
@@ -76,15 +80,15 @@ header nav ul li a:hover{
 /* hero styling */ 
 .hero  {
     background-image: url(../assets/images/cta.jpeg);
-    height: 100%;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
     display: flex;
     flex-wrap: wrap;
 }
 .cta{
     padding: 125px 50px;
+    margin: 70px 0;
 }
 .cta h1{ 
     margin: 0 auto 0 auto;
@@ -107,7 +111,7 @@ header nav ul li a:hover{
     padding: 50px 50px;
 }
 .intro p, .portfolio p, .particular-skills p, .this-far p {
-    padding: 30px 0;
+    padding: 7px 0 20px 0;
 }
 .about-me{
     display: flex;
@@ -132,14 +136,14 @@ header nav ul li a:hover{
     color: #cb2d6f;
 }
 /* project portfolio styling */
-.projects, .skills, .footer{
+.projects, .skills{
     color: black;
     padding: 50px 50px;
 }
 .project-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 .project-list div{
     padding: 0 0 45px 0;
@@ -167,6 +171,15 @@ header nav ul li a:hover{
     max-width: 33%;
     border-top: 2px solid #cb2d6f;
     padding: 20px 0 0 0;
+}
+.sticky1{
+    position: sticky;
+    top: 0;
+    bottom: 300px;
+}
+.sticky2{
+    position: sticky;
+    top: 300px;
 }
 .skills-list{
     display: flex;
@@ -202,6 +215,8 @@ header nav ul li a:hover{
 .footer{
     display: flex;
     justify-content: space-between;
+    color: black;
+    padding: 20px;
 }
 .designed{
     max-width: 70%;
