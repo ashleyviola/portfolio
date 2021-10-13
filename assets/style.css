@@ -150,6 +150,9 @@ header nav ul li a:hover{
     flex: 2 0 0;
     max-width: 70%;
 }
+.project-list img:hover{
+   box-shadow: 5px 5px #cb2d6f;
+}
 .run-buddy-details{
     display: flex;
     flex-direction: column;
