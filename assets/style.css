@@ -178,7 +178,7 @@ header nav ul li a:hover{
 .project-list a:hover{
     background-color: #cb2d6f;
     color: white;
-    max-width: 50%;
+    max-width: 60%;
 }
 #company-name{
     color: black;
